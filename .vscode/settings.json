@@ -17,6 +17,9 @@
 	// #endregion
 	// #region Debugger
 	"debug.javascript.autoAttachFilter": "onlyWithFlag",
-	"debug.internalConsoleOptions": "openOnSessionStart"
+	"debug.internalConsoleOptions": "openOnSessionStart",
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	}
 	// #endregion
 }

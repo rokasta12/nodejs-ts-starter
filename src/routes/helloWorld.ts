@@ -1,8 +1,8 @@
 // routes/helloWorld.ts
-import { Router, Request, Response } from "express";
+import { Request, Response, Router } from "express";
 
 export const helloWorldRouter = Router();
 
-helloWorldRouter.get("/", (req: Request, res: Response) => {
+helloWorldRouter.get("/hello-world", (req: Request, res: Response) => {
 	res.send("Hello, World!");
 });
