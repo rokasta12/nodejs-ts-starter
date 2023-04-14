@@ -1,12 +1,12 @@
-import env from "./env"
+import env from "./env";
 
 // @ts-ignore
 process.env = {
 	...process.env,
 	...env,
-}
+};
 
-type ENV = typeof env
+type ENV = typeof env;
 declare global {
 	namespace NodeJS {
 		// @ts-ignore
