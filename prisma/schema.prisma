@@ -20,4 +20,5 @@ model ContactQR {
   updatedAt DateTime @updatedAt
   code      String   @unique
   userID    String
+  socials   Json?
 }

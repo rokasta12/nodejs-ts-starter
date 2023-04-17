@@ -13,7 +13,11 @@ export const bodyValidator =
 				next();
 			} catch (error) {
 				if (error instanceof ZodError) {
-					const errors = error.issues.map((issue) => issue.message);
+					const errors = error.issues.map((issue) => {
+						const path = issue.path.join(".");
+						const message = issue.message;
+						return `${path ? `${path}: ` : ""}${message}`;
+					});
 					res.status(400).json({ errors });
 				} else {
 					console.error("Unexpected error during validation:", error);
