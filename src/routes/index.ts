@@ -1,4 +1,5 @@
-import { contactQRRouter } from "./contact-qr";
-import { helloWorldRouter } from "./helloWorld";
+import { contactQRRouter } from "./contact-qr.router";
+import { geoipRouter } from "./geoip.router";
+import { healthCheckRouter } from "./health-check.router";
 
-export const appRoutes = [contactQRRouter, helloWorldRouter];
+export const appRoutes = [contactQRRouter, healthCheckRouter, geoipRouter];

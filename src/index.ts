@@ -1,14 +1,12 @@
-import { appRoutes } from "./routes";
-import { contactQRRouter } from "./routes/contact-qr";
-import { helloWorldRouter } from "./routes/helloWorld";
-// index.ts
 import express from "express";
 
-const app = express();
-app.use(express.json());
+import { appRoutes } from "./routes";
 
 const PORT = process.env.PORT || 3000;
 
+const app = express();
+
+app.use(express.json());
 app.use("/api/v1", appRoutes);
 
 app.listen(PORT, () => {
