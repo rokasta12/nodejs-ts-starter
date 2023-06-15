@@ -7,5 +7,17 @@
 # Environment variables
 /env.ts
 
+
+# Directories
+node_modules/
+dist/
+coverage/
+
+# Files
 .env
-env
+.DS_Store
+*.log
+
+# Dependency lock files
+package-lock.json
+yarn.lock

@@ -1,4 +1,4 @@
 PORT=8080
 
 
-DATABASE_URL="postgresql://postgres:1o1zfsOeMl5oForWq7tG@containers-us-west-42.railway.app:6827/railway"
+DATABASE_URL="postgres://postgres:yM5yYpklQwZpr27eRMmL@containers-us-west-1.railway.app:5579/railway"

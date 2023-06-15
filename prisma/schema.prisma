@@ -22,3 +22,13 @@ model ContactQR {
   userID    String
   socials   Json?
 }
+
+model Config {
+  id             Int      @id @default(autoincrement())
+  name           String
+  minimumVersion String
+  metaData       Json?
+  updatedAt      DateTime @updatedAt
+  isActive       Boolean  @default(true)
+  createdAt      DateTime @default(now())
+}
